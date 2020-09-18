@@ -1,8 +1,9 @@
 package com.patterns.p01.strategy.good.RideOnBehaviours;
 
-public class RideOnChariot implements RideOn {
+public class RideOnHorse implements RideOn {
+
 	@Override
 	public void ride() {
-		System.out.println("Riding on Chariot");
+		System.out.println("Riding on Horse");
 	}
 }
