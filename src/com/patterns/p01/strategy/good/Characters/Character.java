@@ -7,10 +7,11 @@ public abstract class Character {
 	Weapon weapon;
 	RideOn rideOn;
 
-	void fight() {weapon.fight();
+	public void fight() {
+		weapon.fight();
 	}
 
-	void ride() {
+	public void ride() {
 		rideOn.ride();
 	}
 }
