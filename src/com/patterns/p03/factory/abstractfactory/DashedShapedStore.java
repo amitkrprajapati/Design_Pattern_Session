@@ -1,11 +1,12 @@
-package com.patterns.p03.factory.simple;
+package com.patterns.p03.factory.abstractfactory;
 
 import com.patterns.p03.factory.shape.*;
 
-public class SimpleShapeFactory {
-	public Shape getShape(ShapeType type) {
+public class DashedShapedStore extends ShapeStore {
+	@Override
+	Shape createShape(ShapeType shapeType) {
 		Shape shape = null;
-		switch (type) {
+		switch (shapeType) {
 			case CIRCLE:
 				shape = new Circle();
 				break;
